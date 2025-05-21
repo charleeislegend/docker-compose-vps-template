@@ -17,6 +17,7 @@ include:
   - easynews-plus-plus/compose.yaml
   - gluetun/compose.yaml
   - honey/compose.yaml
+  - huntarr/compose.yaml
   - jackett/compose.yaml
   - jackettio/compose.yaml
   - jellyfin/compose.yaml
@@ -59,6 +60,7 @@ include:
   - warp/compose.yaml
   - watchtower/compose.yaml
   - wests-scripts/compose.yaml
+  - yamtrack/compose.yaml
   - zilean/compose.yaml
   - zipline/compose.yaml
   - zurg/compose.yaml
