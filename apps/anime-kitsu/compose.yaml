@@ -1,9 +1,6 @@
 services:
   anime-kitsu:
-    build:
-      context: https://github.com/TheBeastLT/stremio-kitsu-anime.git
-      dockerfile: Dockerfile
-    image: anime-kitsu:latest
+    image: charleeislegend/anime-kitsu:latest
     container_name: anime-kitsu
     expose:
       - 7000
@@ -14,7 +11,7 @@ services:
       - META_TTL=86400
       - CATALOG_TTL=86400
       - CACHE_MAX_AGE=43200
-      - MONGO_URI=mongodb://anime-kitsu_mongo:27017/anime-kitsu
+      - REDIS_URL=redis://kitsu_redis:6379
     labels:
       - "traefik.enable=true"
       - "traefik.http.routers.anime-kitsu.rule=Host(`${ANIME_KITSU_HOSTNAME}`)"
@@ -30,18 +27,18 @@ services:
       - stremio
       - all
 
-  anime-kitsu_mongo:
-    image: mongo:latest
-    container_name: anime-kitsu_mongo
+  anime-kitsu_redis:
+    image: redis:latest
+    container_name: anime-kitsu_redis
     restart: unless-stopped
     volumes:
-      - ${DOCKER_DATA_DIR}/anime-kitsu/db:/data/db
+      - ./data/kitsu/cache:/data
+    command: redis-server --appendonly yes --save 60 1
     healthcheck:
-      test: echo 'db.runCommand("ping").ok' | mongosh localhost:27017/test --quiet
+      test: ["CMD", "redis-cli", "ping"]
       interval: 10s
-      timeout: 10s
-      retries: 5
-      start_period: 40s
+      timeout: 5s
+      retries: 5 
     profiles:
       - anime-kitsu
       - stremio
