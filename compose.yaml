@@ -2,6 +2,7 @@ include:
   - apps/authelia/compose.yaml
   - apps/addon-manager/compose.yaml
   - apps/arcane/compose.yaml
+  - apps/aiolists/compose.yaml
   - apps/aiostreams/compose.yaml
   - apps/aiostremio/compose.yaml
   - apps/anime-kitsu/compose.yaml
@@ -30,6 +31,7 @@ include:
   - apps/mediaflow-proxy/compose.yaml
   - apps/mediafusion/compose.yaml
   - apps/minecraft/compose.yaml
+  - apps/nitter/compose.yaml
   - apps/nzbhydra2/compose.yaml
   - apps/omg-tv-addon/compose.yaml
   - apps/overseerr/compose.yaml
@@ -39,6 +41,7 @@ include:
   - apps/portainer/compose.yaml
   - apps/prowlarr/compose.yaml
   - apps/radarr/compose.yaml
+  - apps/redlib/compose.yaml
   - apps/realdebrid-account-monitor/compose.yaml
   - apps/recyclarr/compose.yaml
   - apps/seanime/compose.yaml
@@ -54,6 +57,7 @@ include:
   - apps/stremio-trakt-addon/compose.yaml
   - apps/stremthru/compose.yaml
   - apps/tautulli/compose.yaml
+  - apps/thelounge/compose.yaml
   - apps/tmdb-addon/compose.yaml
   - apps/torbox-manager/compose.yaml
   - apps/torbox-media-center/compose.yaml

@@ -13,6 +13,7 @@ services:
       PROXIED: false
       DOMAINS: >
         ${ADDON_MANAGER_HOSTNAME},
+        ${AIOLISTS_HOSTNAME},
         ${AIOSTREAMS_HOSTNAME},
         ${AIOSTREMIO_HOSTNAME},
         ${ANIME_KITSU_HOSTNAME},
@@ -40,6 +41,7 @@ services:
         ${MEDIAFLOW_PROXY_HOSTNAME},
         ${MEDIAFUSION_HOSTNAME},
         ${MINECRAFT_HOSTNAME},
+        ${NITTER_HOSTNAME},
         ${NZBHYDRA2_HOSTNAME},
         ${OMG_TV_STREMIO_ADDON_HOSTNAME},
         ${OVERSEERR_HOSTNAME},
@@ -50,6 +52,7 @@ services:
         ${RADARR_HOSTNAME},
         ${RADARR4K_HOSTNAME},
         ${RADARRANIME_HOSTNAME},
+        ${REDLIB_HOSTNAME},
         ${SEANIME_HOSTNAME},
         ${SEARXNG_HOSTNAME},
         ${SONARR_HOSTNAME},
@@ -64,6 +67,7 @@ services:
         ${STREMIO_TRAKT_ADDON_HOSTNAME},
         ${STREMTHRU_HOSTNAME},
         ${TAUTULLI_HOSTNAME},
+        ${THE_LOUNGE_HOSTNAME},
         ${TMDB_ADDON_HOSTNAME},
         ${TORBOX_MANAGER_HOSTNAME},
         ${TRAEFIK_HOSTNAME},
