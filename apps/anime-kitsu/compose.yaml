@@ -24,7 +24,6 @@ services:
       - ${DOCKER_DATA_DIR}/anime-kitsu/imdb_mapping.json:/home/node/app/static/data/imdb_mapping.json
     profiles:
       - anime-kitsu
-      - stremio
       - all
 
   anime-kitsu_redis:
@@ -41,7 +40,6 @@ services:
       retries: 5 
     profiles:
       - anime-kitsu
-      - stremio
       - all
 
 
