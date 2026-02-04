@@ -18,6 +18,7 @@ include:
   - apps/bitmagnet/compose.yaml
   - apps/borgmatic/compose.yaml
   - apps/byparr/compose.yaml
+  - apps/cinebye/compose.yaml
   - apps/cloudflare-ddns/compose.yaml
   - apps/comet/compose.yaml
   - apps/crowdsec/compose.yaml

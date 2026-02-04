@@ -30,6 +30,7 @@ services:
         ${BAZARR4K_HOSTNAME},
         ${BESZEL_HOSTNAME},
         ${BITMAGNET_HOSTNAME},
+        ${CINEBYE_HOSTNAME},
         ${COMET_HOSTNAME},
         ${DASHDOT_HOSTNAME},
         ${DEBRIDAV_HOSTNAME},
